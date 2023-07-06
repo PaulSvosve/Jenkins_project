@@ -18,8 +18,8 @@ services:
       - jenkins-docker-certs:/certs/client:ro
     image: myjenkins-blueocean:2.332.3-1
 
-  agent1:
-    container_name: agent2
+  agent2:
+    container_name: agent3
     restart: always
     networks:
       - jenkins
